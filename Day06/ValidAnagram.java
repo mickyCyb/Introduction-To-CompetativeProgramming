@@ -1,4 +1,4 @@
-package com.company;
+//package com.company;
 
 import java.util.Arrays;
 
@@ -6,9 +6,9 @@ public class ValidAnagram {
 
     public static void main(String[] args) {
 
-        //SolutionAnagram solutionAnagram = new SolutionAnagram();
-        //System.out.println(solutionAnagram.isAnagram("anagram","gramana"));  // returns true
-        //System.out.println(solutionAnagram.isAnagram("anagram","gramanan")); // returns false
+        SolutionAnagram solutionAnagram = new SolutionAnagram();
+        System.out.println(solutionAnagram.isAnagram("anagram","gramana"));  // returns true
+        System.out.println(solutionAnagram.isAnagram("anagram","gramanan")); // returns false
 
     }
 }
