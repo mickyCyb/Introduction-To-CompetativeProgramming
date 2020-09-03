@@ -83,6 +83,36 @@ class SolutionPostfix {
 
         }
         return myStack.pop();
+
+
+
+        	// 4ms solution
+        /*
+			 Stack<Integer> stack = new Stack<>();
+        
+        int preceed;
+        for(String str : tokens){
+            if(str.equals("+")){
+                stack.push(stack.pop() + stack.pop());
+            }
+            else if(str.equals("-")){
+                preceed = stack.pop();
+                stack.push(stack.pop() - preceed);
+            }
+            else if(str.equals("*")){
+                stack.push(stack.pop() * stack.pop());
+            }
+            else if(str.equals("/")){
+                preceed = stack.pop();
+                stack.push(stack.pop() / preceed);
+            }
+            else{
+                stack.push(Integer.parseInt(str));
+            }
+            
+        }
+        return stack.pop();
+        */
     }
 }
 
