@@ -10,6 +10,7 @@ class ListNode {
       ListNode next;
       ListNode(int x) { val = x; }
   }
+  // iterative solution
 class SolutionReverseNode {
     public ListNode reverseList(ListNode head) {
 
@@ -38,3 +39,21 @@ class SolutionReverseNode {
         return head;
     }
 }
+
+
+// recursive solution
+// class Solution {
+//     public ListNode reverseList(ListNode head) {
+        
+//         return reverse(null, head);
+//     }
+//     public ListNode reverse(ListNode prev, ListNode current){
+//         if(current == null){
+//             return prev;
+//         }
+//         ListNode next = current.next;
+//         current.next = prev;
+        
+//         return reverse(current,next);
+//     }
+// }
