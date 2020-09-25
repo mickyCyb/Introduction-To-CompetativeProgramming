@@ -103,7 +103,28 @@ class Solution {
         t3.right = mergeTrees(t1Right, t2Right);
         
         return t3;
-    }
+
+
+        // short solution
+
+    //     // return the tree that has nodes, if the other tree has no nodes(null).
+    //     if(t1 == null){
+    //         return t2;
+    //     }
+    //     if(t2 == null){
+    //         return t1;
+    //     }
+        
+    //     // add the two nodes values to one of the nodes and return that tree node.
+    //     // in this case t1 is used.
+        
+    //     t1.val += t2.val;
+        
+    //     t1.left = mergeTrees(t1.left,t2.left);
+    //     t1.right = mergeTrees(t1.right,t2.right);
+        
+    //     return t1;
+    // }
         
         
 }  
