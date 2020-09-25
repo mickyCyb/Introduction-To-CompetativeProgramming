@@ -33,6 +33,8 @@ class SolutionRangeSumBST {
 
     //  Input: root = [10,5,15,3,7,null,18], L = 7, R = 15
     //  Output: 32
+
+    //// recursive solution
     public int rangeSumBST(TreeNode root, int L, int R) {
         
         int sum =0;
@@ -52,6 +54,27 @@ class SolutionRangeSumBST {
 
         }
 
+        return sum;
+
+
+        // iterative solution
+        // using stack
+
+        Stack<TreeNode> stack = new Stack<>();
+        int sum =0;
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            if(node.val <= R && node.val >= L){
+                sum+= node.val;
+            }
+            if(node.left != null && node.val > L){
+                stack.push(node.left);
+            }
+            if(node.right != null && node.val < R){
+                stack.push(node.right);
+            }
+        }
         return sum;
     }
 }
