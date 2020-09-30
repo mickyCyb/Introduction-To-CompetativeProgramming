@@ -16,6 +16,7 @@ public class PeakIndexInAMountainArray {
 class SolutionPeakIndexInAMountainArray {
     public int peakIndexInMountainArray(int[] A) {
         
+        // linear solution
         int res=A[0];
         if(A.length < 3){
             return 0;
@@ -30,5 +31,22 @@ class SolutionPeakIndexInAMountainArray {
         }
         
         return res;
+
+
+        	// binary search solution
+
+        // int start = 0;
+        // int end = arr.length -1;
+        // while(start < end){
+        //     int mid = start + (end - start)/2;
+            
+        //     if(arr[mid] < arr[mid+1]){
+        //         start = mid +1;
+        //     }
+        //     else{
+        //         end = mid;
+        //     }
+        // }
+        // return start;
     }
 }
