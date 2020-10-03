@@ -45,5 +45,24 @@ class SolutionFirstBadVersion extends VersionControl {
             return n;
         }
         return currentNumber;
+
+        
+
+        // efficient solution
+
+        // int start=1;
+        // int end = n;
+        
+        // while(start < end){
+        //     int mid = start + (end - start)/2;
+            
+        //     if(isBadVersion(mid) == false){
+        //         start = mid+1;
+        //     }
+        //     else{
+        //         end = mid;
+        //     }
+        // }
+        // return start;
     }
 }
