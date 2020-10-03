@@ -70,4 +70,28 @@ class maxHeapComparator implements Comparator<PairItems>{
         return 0;
     }
 
+
+
+
+    // shorter solution
+
+    // int[] result = new int[k];
+    //     HashMap<Integer,Integer> map = new HashMap<>();
+    //     PriorityQueue<Integer> maxHeap = new PriorityQueue<>( (a,b) -> map.get(b)-map.get(a));
+        
+    //     for(int i=0; i < nums.length; i++){
+    //         if(map.containsKey(nums[i])){
+    //             map.put(nums[i], map.get(nums[i]) +1);
+    //         }
+    //         else{
+    //             map.put(nums[i], 1);
+    //         }
+    //     }
+        
+    //     maxHeap.addAll(map.keySet());
+    //     for(int i = k - 1; i >= 0; --i)
+    //         result[i] = maxHeap.poll();
+        
+    //     return result;
+
 }
